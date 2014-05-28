@@ -1,0 +1,28 @@
+{
+  "name": "angular-youtube-preview",
+  "version": "0.0.1",
+  "homepage": "https://github.com/stevenw/angular-youtube-preview",
+  "authors": [
+    "StevenW <stevenwisniewski@gmail.com>"
+  ],
+  "description": "An angular directive to display a preview of youtube videos that will switch to a player when clicked.",
+  "main": "angular-youtube-preview.js",
+  "keywords": [
+    "angular",
+    "youtube",
+    "preview",
+    "angularjs"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": ">= 1.2.*"
+  },  
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
