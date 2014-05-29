@@ -6,5 +6,5 @@ This AngularJS directive retrieves & displays a preview screen shot for http://w
 
 API
 ===
-#v
-*required* the video's id. https://www.youtube.com/watch?v=**tuSvnhcATUE**
+#v the video's id.
+[youtube.com/watch?v= **tuSvnhcATUE**](http://www.youtube.com/watch?v=tuSvnhcATUE)
