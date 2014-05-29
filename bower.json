@@ -1,11 +1,11 @@
 {
   "name": "angular-youtube-preview",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/stevenw/angular-youtube-preview",
   "authors": [
     "StevenW <stevenwisniewski@gmail.com>"
   ],
-  "description": "An angular directive to display a preview of youtube videos that will switch to a player when clicked.",
+  "description": "This AngularJS directive retrieves & displays a preview screen shot for http://www.youtube.com videos in lieu of loading the embedded player until the user clicks the preview.",
   "main": "angular-youtube-preview.js",
   "keywords": [
     "angular",

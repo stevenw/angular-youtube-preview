@@ -7,14 +7,14 @@
 			replace: true,
 			template: '<div></div>',
 			scope: {
-				uid: '@',
+				v: '@',
 				frameKey: '@',
 				playIcon: '@',
 				width: '@',
 				height: '@'
 			},
 			link: function (scope, element, attrs) {
-				var preview = 'http://img.youtube.com/vi/' + scope.uid + '/' + scope.frameKey + '.jpg';
+				var preview = 'http://img.youtube.com/vi/' + scope.v + '/' + scope.frameKey + '.jpg';
 				var playImage = angular.element('<img>');
 
 				element.css({
@@ -46,7 +46,7 @@
 						height: '100%',
 						frameborder: 0,
 						allowfullscreen: true,
-						src: "http://www.youtube.com/embed/" + scope.uid + "?rel=0&autoplay=1"
+						src: "http://www.youtube.com/embed/" + scope.v + "?rel=0&autoplay=1"
 					});
 
 					element.empty();
