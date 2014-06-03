@@ -3,13 +3,27 @@ angular-youtube-preview
 
 This AngularJS directive retrieves & displays a preview screen shot for http://www.youtube.com videos in lieu of loading the embedded player until the user clicks the preview.
 
+Requirements: AngularJS 1.2+
 
-API
-===
+
+
+## Usage:
+
+add the module as a dependency.
+
+```js
+angular.module('myApp', ['angularYoutubePreview'])
+```
+
+#### install via bower:
+```
+$ bower install angular-youtube-preview
+```
+
+
+## Configuration
+```
+<youtube-preview v="SEyNApYnmgg" width="560" height="315" frame-key="0" play-icon="img/icon-youtube-play.png"></youtube-preview>
+```
 
 >
-v *required* The video's id youtube.com/watch?v= **tuSvnhcATUE**
-width *required* The width of the preview and embedded player.
-height *required* The height of the preview and embedded player.
-frame-key *optional* The preview you want to display. Defaults to 0.
-play-icon *optional* the image path for the play icon. Defaults to no icon.
