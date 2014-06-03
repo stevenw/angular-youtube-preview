@@ -22,8 +22,14 @@ $ bower install angular-youtube-preview
 
 
 ## Configuration
+
+#### required
+```
+<youtube-preview v="SEyNApYnmgg" width="560" height="315"></youtube-preview>
+```
+
+#### optional
 ```
 <youtube-preview v="SEyNApYnmgg" width="560" height="315" frame-key="0" play-icon="img/icon-youtube-play.png"></youtube-preview>
 ```
 
->
