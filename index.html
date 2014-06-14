@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
-	<title></title>
+	<title>Angular Youtube Preview</title>
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -13,12 +13,24 @@
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="angular-youtube-preview.js"></script>
 	<script>
-		angular.module('app', [
+		'use strict';
+
+		var app = angular.module('app', [
 		    'angularYoutubePreview'
 		]);
+
+		app.controller('PlaylistCrtl', ['$scope', function ($scope) {
+			$scope.videos = [
+				{id: 'SEyNApYnmgg', title: 'The Alcoholocaust'},
+				{id: 'SZ3pxNMQ8sc', title: 'How To Bone Out A Bone-In Ribeye'}
+			];
+		}]);
 	</script>
 </head>
-<body ng-app="app">
-	<youtube-preview v="SEyNApYnmgg" width="560" height="315" frame-key="0" play-icon="img/icon-youtube-play.png"></youtube-preview>
+<body ng-controller="PlaylistCrtl">
+	<div ng-repeat="video in videos">
+		<h1>{{video.title}}</h1>
+		<youtube-preview v="{{video.id}}" width="560" height="315"></youtube-preview>
+	</div>
 </body>
 </html>

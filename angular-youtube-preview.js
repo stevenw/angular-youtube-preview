@@ -17,6 +17,8 @@
 				var preview = 'http://img.youtube.com/vi/' + scope.v + '/' + scope.frameKey + '.jpg';
 				var playImage = angular.element('<img>');
 
+				console.log(scope.frameKey);
+
 				element.css({
 					width: scope.width + 'px',
 					height: scope.height + 'px',
@@ -26,19 +28,21 @@
 					cursor: 'pointer'
 				});
 
-				playImage.attr({
-					alt: 'play',
-					src: scope.playIcon
-				});
+				if (scope.playIcon) {
+					playImage.attr({
+						alt: 'play',
+						src: scope.playIcon
+					});
 
-				playImage.css({
-					position: 'absolute',
-					top: '50%',
-					left: '50%',
-					transform: 'translate(-50%, -50%)',
-				});
+					playImage.css({
+						position: 'absolute',
+						top: '50%',
+						left: '50%',
+						transform: 'translate(-50%, -50%)',
+					});
 
-				element.append(playImage);
+					element.append(playImage);
+				}
 
 				element.bind('click', function () {
 					var iframe = angular.element('<iframe></iframe>').attr({
@@ -55,4 +59,4 @@
 			}
 		}
 	}]);
-})(window, angular, undefined);
+})(window, angular);
