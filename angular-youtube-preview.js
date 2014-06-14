@@ -14,10 +14,13 @@
 				height: '@'
 			},
 			link: function (scope, element, attrs) {
-				var preview = 'http://img.youtube.com/vi/' + scope.v + '/' + scope.frameKey + '.jpg';
-				var playImage = angular.element('<img>');
+				var preview, playImage = angular.element('<img>');
 
-				console.log(scope.frameKey);
+				if ( ! scope.frameKey) {
+					scope.frameKey = 0;
+				}
+
+				preview = 'http://img.youtube.com/vi/' + scope.v + '/' + scope.frameKey + '.jpg'
 
 				element.css({
 					width: scope.width + 'px',
