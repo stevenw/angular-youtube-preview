@@ -20,7 +20,7 @@
 					scope.frameKey = 0;
 				}
 
-				preview = 'http://img.youtube.com/vi/' + scope.v + '/' + scope.frameKey + '.jpg'
+				preview = '//img.youtube.com/vi/' + scope.v + '/' + scope.frameKey + '.jpg'
 
 				element.css({
 					width: scope.width + 'px',
@@ -53,7 +53,7 @@
 						height: '100%',
 						frameborder: 0,
 						allowfullscreen: true,
-						src: "http://www.youtube.com/embed/" + scope.v + "?rel=0&autoplay=1"
+						src: "//www.youtube.com/embed/" + scope.v + "?rel=0&autoplay=1"
 					});
 
 					element.empty();
