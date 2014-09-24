@@ -34,6 +34,7 @@
 				if (scope.playIcon) {
 					playImage.attr({
 						alt: 'play',
+						title: 'Play',
 						src: scope.playIcon
 					});
 
