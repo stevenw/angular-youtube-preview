@@ -3,7 +3,7 @@
   "version": "0.0.4",
   "homepage": "https://github.com/stevenw/angular-youtube-preview",
   "authors": [
-    "StevenW <stevenwisniewski@gmail.com>"
+    "StevenW <me@stevenw.us>"
   ],
   "description": "This AngularJS directive retrieves & displays a preview screen shot for http://www.youtube.com videos in lieu of loading the embedded player until the user clicks the preview.",
   "main": "angular-youtube-preview.js",
